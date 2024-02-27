@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "ang-blog-dashboard",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "http-client-8c56c": {
+      "hosting": {
+        "ang-blog-dashboard": [
+          "http-client-8c56c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "http-client-8c56c"
+  }
+}
