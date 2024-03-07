@@ -32,19 +32,24 @@
                         <tbody>
                             <tr *ngFor="let post of postArray; let i = index">
                                 <td class="w-10">{{ i + 1 }}</td>
-                                <td class="w-20"><img
+                                <td class="w-20 col-md-4"><img
                                         src="{{ post.data.postImgPath }}"
                                         class="img img-fluid"></td>
-                                <td class="w-20">{{ post.data.title }}</td>
-                                <td class="w-30">{{ post.data.excerpt }}</td>
-                                <td>{{ post.data.category.category }}</td>
-                                <td>{{ post.data.createdAt.toMillis() | date
+                                <td class="w-20 col-md-2">{{ post.data.title
                                     }}</td>
-                                <td>
-                                    <button
-                                        class="btn btn-sm btn-warning"
+                                <td class="w-30 col-md-3">{{ post.data.excerpt
+                                    }}</td>
+                                <td class="col-md-1">{{
+                                    post.data.category.category }}</td>
+                                <td class="col-md-1">{{
+                                    post.data.createdAt.toMillis() | date
+                                    }}</td>
+                                <td class="col-md-1">
+                                    <button class="btn btn-sm btn-warning"
                                         routerLink="/posts/new"
-                                        [queryParams]="{id: post.id}">Edit</button>
+                                        [queryParams]="{id: post.id}">
+                                        Edit
+                                    </button>
                                 </td>
                             </tr>
                         </tbody>
